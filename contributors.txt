@@ -1,0 +1,6 @@
+Contributors prior to the creation of the repository:
+Silvia Stegaru worked on the multiple chained matrix feature. 
+Cristian Pătru and Eugen Buzilă solved the SPI / Ethernet interference bug.
+Cristian Buzec worked on integrating the Ethernet webserver.
+Cristian Stoican worked on the SPI communication.
+The API functions in the header were written by Cristian Pătru and Silvia Stegaru.
