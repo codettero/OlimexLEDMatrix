@@ -6,12 +6,23 @@ Arduino Library for interfacing multiple Olimex RGB 8x8 Matrix.
 Provider link: https://www.olimex.com/Products/MSP430/Booster/MOD-LED8x8/
 
 ## Installation
-Download the files and include the header provided in your project. For those of you who are new to programming, you should know that you can use any programming interface you want, including the Arduino IDE. 
+Download the files and include the header "led_matrix.h"; optionally, if you want to use a font, you can include "font.h". For those of you who are new to programming, you should know that you can use any programming interface you want, including the Arduino IDE. 
 
 ## Getting started
 
-The RGB Matrix uses the SPI library, which means that it needs to be connected to the SPI pins. Usualy: CLOCK: 13, DATA: 10. The LATCH pin can be any pin and has to be supplied in the constructor.
+The matrix can be chained directly, as can be seen in image TODO. 
 
-The RGB Matrix does support multiplexing, it just has to be called on update.
+A working example of an Internet of Things application is in the "olimex.ino" file. If you are using the Arduino IDE, be sure to move all source and header files in a folder named "olimex" before compiling. The application uses the Arduino web server to control what gets displayed on the Olimex matrix chain. For this example you also require an Arduino Ethernet shield.
 
-Working examples are provided.
+You have to provide the matrix constructor with the number of matrix you have phisically chained; in our example, we have used the NUMBER_OF_MATRIX macro.
+
+The matrix / Arduino pin correspondance can be viewed in the table below. The latch pin can be changed as you wish.
+
+| Matrix Pins | Arduino Pins |
+| --------- | -------------- |
+|			GND		|		GND					 |
+|			GND		|		GND					 |
+|			DATA	|		11					 |
+|			LATCH	|		8					   |
+|			SCK		|		13					 |
+|			VCC		|		VCC					 |
