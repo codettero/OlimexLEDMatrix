@@ -10,7 +10,7 @@ Download the files and include the header "led_matrix.h"; optionally, if you wan
 
 ## Getting started
 
-The matrix can be chained directly, as can be seen in image TODO. 
+The matrix can be chained directly, as can be seen in the image below, where there are 3 chained matrix: ![Example of how to create the matrix chain.][matrix_chain]
 
 A working example of an Internet of Things application is in the "olimex.ino" file. If you are using the Arduino IDE, be sure to move all source and header files in a folder named "olimex" before compiling. The application uses the Arduino web server to control what gets displayed on the Olimex matrix chain. For this example you also require an Arduino Ethernet shield.
 
@@ -26,3 +26,5 @@ The matrix / Arduino pin correspondance can be viewed in the table below. The la
 |			LATCH	|		8					   |
 |			SCK		|		13					 |
 |			VCC		|		VCC					 |
+
+[matrix_chain]: https://github.com/codettero/iot4girls/blob/master/matrix_chain.jpg "Example of how to create the matrix chain."
